@@ -1,5 +1,5 @@
 import LeftBar from "@/components/LeftBar";
-import "./globals.css";
+import "@/app/globals.css";
 import RightBar from "@/components/RightBar";
 
 import type { Metadata } from 'next'
