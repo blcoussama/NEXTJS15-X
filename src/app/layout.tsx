@@ -5,13 +5,13 @@ export default function AppLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-  modal: React.ReactNode;
+  modal: React.ReactNode; // Note: modal isn’t used here, but kept for compatibility
 }>) {
   return (
     <ClerkProvider>
-        <body>
-            { children }
-        </body>
+      <html lang="en">
+        <body>{children}</body>
+      </html>
     </ClerkProvider>
   );
 }

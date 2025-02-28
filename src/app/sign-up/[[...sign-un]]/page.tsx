@@ -73,7 +73,7 @@ const SignUpPage = () => {
                 <Clerk.Input
                   className="py-2 px-6 rounded-full text-black w-72 placeholder:text-sm"
                   placeholder="E-mail"
-                />
+                />  
                 <Clerk.FieldError className="text-red-300 text-sm" />
               </Clerk.Field>
               <Clerk.Field name="password" className="flex flex-col gap-2">
