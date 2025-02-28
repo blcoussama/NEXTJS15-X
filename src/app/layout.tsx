@@ -1,17 +1,19 @@
 import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
+import QueryProvider from "@/providers/QueryProvider";
 
 export default function AppLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-  modal: React.ReactNode; // Note: modal isn’t used here, but kept for compatibility
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body>{children}</body>
-      </html>
+      <QueryProvider>
+        <html lang="en">
+          <body>{children}</body>
+        </html>
+      </QueryProvider>
     </ClerkProvider>
   );
 }
