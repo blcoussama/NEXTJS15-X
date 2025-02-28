@@ -1,6 +1,6 @@
 "use client"
 
-const InfiniteFeed = () => {
+const InfiniteFeed = ({ userProfileId }: { userProfileId?: string }) => {
   return (
     <div>InfiniteFeed</div>
   )
